@@ -1,0 +1,75 @@
+.listeBDCards {
+  .BDCard {
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+    padding: 20px;
+
+    @media (max-width: 650px) {
+      width: 570px;
+      height: 570px;
+    }
+
+    @media (max-width: 630px) {
+      width: 540px;
+      height: 540px;
+    }
+    @media (max-width: 600px) {
+      width: 510px;
+      height: 510px;
+    }
+    @media (max-width: 600px) {
+      width: 450px;
+      height: 450px;
+    }
+
+    @media (max-width: 460px) {
+      width: 430px;
+      height: 430px;
+      padding: 10px;
+    }
+
+    @media (max-width: 430px) {
+      width: 410px;
+      height: 410px;
+    }
+
+    @media (max-width: 420px) {
+      width: 390px;
+      height: 390px;
+    }
+
+    @media (max-width: 400px) {
+      width: 370px;
+      height: 370px;
+      padding: 3px;
+    }
+    @media (max-width: 385px) {
+      width: 330px;
+      height: 330px;
+      padding: 1px;
+    }
+
+    .imgVache {
+      grid-area: im001;
+      background: url(../../assets/img/001HistoireVache.png) center/cover;
+      padding: 3px;
+      min-height: 100%;
+      border-radius: 20px;
+      @media (max-width: 650px) {
+        background-size: contain; /* Redimensionner l'image pour s'ajuster */
+      }
+    }
+
+    .imgOmnivoreChoix {
+      grid-area: im002;
+      background: url(../../assets/img/002OmnivoreParChoix.png) center/cover;
+      padding: 3px;
+      min-height: 100%;
+      border-radius: 20px;
+      @media (max-width: 650px) {
+        background-size: contain; /* Redimensionner l'image pour s'ajuster */
+      }
+    }
+  }
+}

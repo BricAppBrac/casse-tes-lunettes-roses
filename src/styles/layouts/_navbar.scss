@@ -1,0 +1,202 @@
+nav,
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // height: calc(100% - 5vh);
+  height: 100%;
+
+  margin: auto auto;
+  background: url(../../assets/img/champetre.jpg) center/cover;
+
+  .nav-container {
+    width: 100vw;
+    padding: 20px;
+    // @media screen and (max-width: 1110px) {
+    //   margin: 5px auto;
+    // }
+
+    .logo {
+      border: 2px solid whitesmoke;
+      box-shadow: 8px 7px 18px 3px whitesmoke;
+      border-radius: 20px;
+      background: $parchemin;
+      backdrop-filter: blur(10px);
+      max-width: 1100px;
+      max-height: 120px;
+      margin: 3px auto;
+      display: grid;
+      height: 100%;
+      text-align: center;
+      grid-template-columns: 15% 60% 25%;
+      grid-template-areas: "lo ti na";
+
+      @media screen and (max-width: 775px) {
+        grid-template-columns: 17% 65% 18%;
+      }
+
+      @media screen and (max-width: 670px) {
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+          "ti ti"
+          "lo na";
+      }
+
+      @media screen and (max-width: 440px) {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+          "ti ti"
+          "lo na";
+      }
+
+      .imglogo {
+        grid-area: lo;
+        background: url(../../assets/img/logo180.png) center/cover;
+        padding: 3px;
+        width: 70%;
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        @media screen and (max-width: 1050px) {
+          width: 60%;
+        }
+        @media screen and (max-width: 670px) {
+          width: 40%;
+        }
+      }
+
+      ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        li {
+          font-weight: 600;
+          font-size: 1.2rem;
+          color: whitesmoke;
+          letter-spacing: 2px;
+
+          a {
+            text-decoration: none;
+            color: whitesmoke;
+            padding: 2px;
+            border-radius: 10px;
+
+            &.nav-active {
+              background: $green;
+              // @media screen and (max-width: 1185px) {
+              //   padding: 3px;
+              // }
+            }
+            /* liens cliquables non-soulignés*/
+
+            &:visited {
+              color: whitesmoke;
+              text-decoration: none;
+            }
+            &:hover {
+              // letter-spacing: 2.5px;
+              background: $brown1;
+            }
+          }
+        }
+      }
+
+      h1 {
+        grid-area: ti;
+        font-size: 2.8rem;
+        font-weight: 700;
+        padding: 10px 5px;
+
+        text-align: center;
+        font-family: $font2;
+        letter-spacing: 1.5px;
+
+        @media screen and (max-width: 1110px) {
+          font-size: 2.6rem;
+        }
+        @media screen and (max-width: 1050px) {
+          font-size: 2.4rem;
+        }
+        @media screen and (max-width: 975px) {
+          font-size: 2.2rem;
+        }
+        @media screen and (max-width: 905px) {
+          font-size: 2rem;
+        }
+        @media screen and (max-width: 845px) {
+          font-size: 1.8rem;
+        }
+        @media screen and (max-width: 775px) {
+          font-size: 1.6rem;
+          padding: 7px 2px;
+        }
+        @media screen and (max-width: 475px) {
+          font-size: 1.5rem;
+          letter-spacing: 1.2px;
+        }
+        @media screen and (max-width: 440px) {
+          font-size: 1.4rem;
+          letter-spacing: 1px;
+        }
+      }
+
+      .nav-buttons {
+        grid-area: na;
+        font-size: 2rem;
+        padding: 0 5px 0 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        position: relative;
+
+        @media screen and (max-width: 670px) {
+          justify-content: right;
+        }
+
+        button {
+          font-weight: 700;
+          margin: 6px;
+          padding: 6px 6px;
+          font-size: 1.4rem;
+          border-radius: 5px;
+          // display: block;
+          // margin: 0 5px 5px 0;
+          background-color: $green3;
+
+          &:hover {
+            background: $brown1;
+            color: wheat;
+          }
+
+          a,
+          i {
+            text-decoration: none;
+            transition: all 0.2s linear;
+            // display: block;
+
+            font-weight: 700;
+            align-items: center;
+            color: $green2;
+
+            text-decoration: none;
+
+            &:hover {
+              color: wheat;
+              background: $brown1;
+            }
+
+            &:visited {
+              color: $green2;
+            }
+          }
+        }
+      }
+    }
+  }
+}

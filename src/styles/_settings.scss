@@ -1,0 +1,47 @@
+// couleurs
+$brown1: rgb(37, 21, 11);
+$parchemin: rgba(187, 176, 159, 0.644);
+$parchemin2: rgba(187, 176, 159, 0.822);
+$parchemin3: rgba(209, 205, 199, 0.822);
+$green: rgb(136, 184, 96);
+$green2: rgb(40, 75, 35);
+$green3: rgb(206, 228, 187);
+$code: rgb(214, 86, 48);
+$title: rgb(56, 15, 110);
+$footer: rgb(40, 75, 35);
+$coffee: rgb(110, 15, 50);
+
+// polices
+
+@font-face {
+  font-family: "CheeseB";
+  src: url(../assets/fonts/CheeseBurger.otf);
+}
+
+@font-face {
+  font-family: "Wortlb";
+  src: url(../assets/fonts/wortl-b.ttf);
+}
+
+$font1: CheeseB, sans-serif;
+$font2: Wortlb, sans-serif;
+
+// paramètres généraux
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  li {
+    list-style: none;
+  }
+}
+
+body {
+  font-family: $font1;
+  background: $parchemin;
+  height: 100vh;
+  color: $brown1;
+  border: 10px $parchemin;
+  // user-select: none; /*pour ne pas autoriser la sélection du nom de la case*/
+}

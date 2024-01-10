@@ -1,0 +1,16 @@
+.contact-container {
+  max-height: 100vh;
+  min-height: 300px;
+  width: 100vw;
+  background: $parchemin;
+
+  padding: 10px;
+
+  h3 {
+    font-family: $font2;
+    margin: 7px;
+    padding-top: 30px;
+    font-size: 1.6rem;
+    text-align: center;
+  }
+}
