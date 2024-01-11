@@ -50,6 +50,15 @@
       padding: 1px;
     }
 
+    @media (max-width: 355px) {
+      width: 320px;
+      height: 320px;
+    }
+    @media (max-width: 340px) {
+      width: 310px;
+      height: 310px;
+    }
+
     .imgVache {
       grid-area: im001;
       background: url(../../assets/img/001HistoireVache.png) center/cover;

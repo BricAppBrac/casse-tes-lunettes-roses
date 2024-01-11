@@ -36,19 +36,33 @@ nav,
       }
 
       @media screen and (max-width: 670px) {
-        grid-template-columns: 40% 60%;
+        grid-template-columns: 30% 70%;
         grid-template-rows: 1fr 1fr;
         grid-template-areas:
-          "ti ti"
-          "lo na";
+          "lo ti"
+          "na na";
       }
 
-      @media screen and (max-width: 440px) {
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 1fr 1fr;
+      @media screen and (max-width: 560px) {
+        grid-template-columns: 25% 75%;
+      }
+
+      @media screen and (max-width: 560px) {
+        grid-template-columns: 25% 75%;
+      }
+
+      @media screen and (max-width: 455px) {
+        grid-template-columns: 15% 85%;
+      }
+      @media screen and (max-width: 420px) {
+        grid-template-columns: 20% 80%;
+      }
+      @media screen and (max-width: 410px) {
+        grid-template-columns: 30% 70%;
+
         grid-template-areas:
-          "ti ti"
-          "lo na";
+          "lo ti"
+          "na ti";
       }
 
       .imglogo {
@@ -66,6 +80,21 @@ nav,
         }
         @media screen and (max-width: 670px) {
           width: 40%;
+        }
+        @media screen and (max-width: 560px) {
+          width: 50%;
+        }
+        @media screen and (max-width: 455px) {
+          width: 90%;
+        }
+        @media screen and (max-width: 430px) {
+          padding: 0;
+        }
+        @media screen and (max-width: 410px) {
+          width: 70%;
+        }
+        @media screen and (max-width: 320px) {
+          width: 75%;
         }
       }
 
@@ -111,7 +140,7 @@ nav,
         font-size: 2.8rem;
         font-weight: 700;
         padding: 10px 5px;
-
+        color: $brown1;
         text-align: center;
         font-family: $font2;
         letter-spacing: 1.5px;
@@ -135,13 +164,30 @@ nav,
           font-size: 1.6rem;
           padding: 7px 2px;
         }
-        @media screen and (max-width: 475px) {
+        @media screen and (max-width: 520px) {
           font-size: 1.5rem;
           letter-spacing: 1.2px;
         }
-        @media screen and (max-width: 440px) {
+        @media screen and (max-width: 490px) {
           font-size: 1.4rem;
           letter-spacing: 1px;
+        }
+        @media screen and (max-width: 455px) {
+          font-size: 1.3rem;
+          letter-spacing: 0.9px;
+          text-align: left;
+        }
+        @media screen and (max-width: 430px) {
+          letter-spacing: 0.8px;
+          padding-left: 10px;
+        }
+        @media screen and (max-width: 410px) {
+          font-size: 1.5rem;
+          letter-spacing: 0.9px;
+          text-align: left;
+        }
+        @media screen and (max-width: 335px) {
+          padding-left: 20px;
         }
       }
 
@@ -156,7 +202,7 @@ nav,
         position: relative;
 
         @media screen and (max-width: 670px) {
-          justify-content: right;
+          justify-content: center;
         }
 
         button {
