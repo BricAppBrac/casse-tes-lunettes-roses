@@ -1,9 +1,53 @@
 .listeBDCards {
+  .BDCardMultiple {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    button {
+      font-weight: 700;
+      margin: 2px 0 20px 0;
+      padding: 6px 6px;
+      font-size: 1.4rem;
+      border-radius: 5px;
+      // display: block;
+      // margin: 0 5px 5px 0;
+      background-color: $green3;
+
+      &:hover {
+        background: $brown1;
+        color: wheat;
+      }
+
+      a,
+      i {
+        text-decoration: none;
+        transition: all 0.2s linear;
+        // display: block;
+
+        font-weight: 700;
+        align-items: center;
+        color: $green2;
+
+        text-decoration: none;
+
+        &:hover {
+          color: wheat;
+          background: $brown1;
+        }
+
+        &:visited {
+          color: $green2;
+        }
+      }
+    }
+  }
+
   .BDCard {
     width: 600px;
     height: 600px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 20px 20px 5px 20px;
 
     @media (max-width: 650px) {
       width: 570px;
@@ -59,8 +103,44 @@
       height: 310px;
     }
 
+    .imgCoeurVeganA {
+      background: url(../../assets/img/003ACoeurVegan.png) center/cover;
+      padding: 3px;
+      min-height: 100%;
+      border-radius: 20px;
+      @media (max-width: 650px) {
+        background-size: contain; /* Redimensionner l'image pour s'ajuster */
+      }
+    }
+    .imgCoeurVeganB {
+      background: url(../../assets/img/003BCoeurVegan.png) center/cover;
+      padding: 3px;
+      min-height: 100%;
+      border-radius: 20px;
+      @media (max-width: 650px) {
+        background-size: contain; /* Redimensionner l'image pour s'ajuster */
+      }
+    }
+    .imgCoeurVeganC {
+      background: url(../../assets/img/003CCoeurVegan.png) center/cover;
+      padding: 3px;
+      min-height: 100%;
+      border-radius: 20px;
+      @media (max-width: 650px) {
+        background-size: contain; /* Redimensionner l'image pour s'ajuster */
+      }
+    }
+    .imgCoeurVeganD {
+      background: url(../../assets/img/003DCoeurVegan.png) center/cover;
+      padding: 3px;
+      min-height: 100%;
+      border-radius: 20px;
+      @media (max-width: 650px) {
+        background-size: contain; /* Redimensionner l'image pour s'ajuster */
+      }
+    }
+
     .imgVache {
-      grid-area: im001;
       background: url(../../assets/img/001HistoireVache.png) center/cover;
       padding: 3px;
       min-height: 100%;
@@ -71,7 +151,6 @@
     }
 
     .imgOmnivoreChoix {
-      grid-area: im002;
       background: url(../../assets/img/002OmnivoreParChoix.png) center/cover;
       padding: 3px;
       min-height: 100%;
