@@ -9,6 +9,11 @@ const Navbar = () => {
     navigate("/");
   };
 
+  const handlePageRecettes = () => {
+    console.log("handleLogoClick");
+    navigate("/recettes-veganes");
+  };
+
   const handleInstagram = () => {
     console.log("handleInstagram");
     window.open(
@@ -32,6 +37,12 @@ const Navbar = () => {
           <div className="nav-buttons">
             <ul>
               <li>
+                <button onClick={() => handlePageRecettes()}>
+                  {" "}
+                  <i className="fa-solid fa-utensils"></i>
+                </button>
+              </li>
+              <li>
                 <button onClick={() => handleHome()}>
                   {" "}
                   <i className="fa-solid fa-house"></i>
@@ -43,22 +54,7 @@ const Navbar = () => {
                   <i className="fa-brands fa-square-instagram"></i>
                 </button>
               </li>
-              {/* <li>
-              <NavLink
-                to="/"
-                className={!isListeDesRecettesActive ? "nav-active" : ""}
-              >
-                Menu de la semaine
-              </NavLink>
-              <span>
-                Inscription gratuite pour pouvoir créer le Menu de la Semaine
-              </span>
-            </li> */}
             </ul>
-            {/* <div className="nav-buttons">
-            <button onClick={() => handleSignUp()}>Inscription gratuite</button>
-            <button onClick={() => handleSignIn()}>Espace perso</button>
-          </div> */}
           </div>
         </div>
       </div>
