@@ -9,9 +9,13 @@ const Navbar = () => {
     navigate("/");
   };
 
-  const handlePageRecettes = () => {
-    console.log("handleLogoClick");
-    navigate("/recettes-veganes");
+  const handlePageRecettesSucrees = () => {
+    console.log("handlePageRecettesSucrees");
+    navigate("/recettes-veganes-sucrees");
+  };
+  const handlePageRecettesSalees = () => {
+    console.log("handlePageRecettesSalees");
+    navigate("/recettes-veganes-salees");
   };
 
   const handleInstagram = () => {
@@ -37,9 +41,15 @@ const Navbar = () => {
           <div className="nav-buttons">
             <ul>
               <li>
-                <button onClick={() => handlePageRecettes()}>
+                <button onClick={() => handlePageRecettesSalees()}>
                   {" "}
                   <i className="fa-solid fa-utensils"></i>
+                </button>
+              </li>
+              <li>
+                <button onClick={() => handlePageRecettesSucrees()}>
+                  {" "}
+                  <i className="fa-solid fa-ice-cream"></i>
                 </button>
               </li>
               <li>

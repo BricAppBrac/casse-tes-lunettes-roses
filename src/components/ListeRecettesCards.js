@@ -1,6 +1,8 @@
 import React from "react";
 
-const ListeRecettesCards = () => {
+const ListeRecettesCards = ({ type }) => {
+  console.log("ListeRecettesCards");
+  console.log("type : " + type);
   // const [imgIndices, setImgIndices] = useState({
   //   coeurVegan: 0,
   //   cochons: 0,
@@ -60,10 +62,26 @@ const ListeRecettesCards = () => {
         </div>
       </div>
       {renderStars()} */}
-
-      <div className="RecetteCard">
-        <div className="r01cookies"></div>
-      </div>
+      {type === "sucrees" && (
+        <div className="sucrees">
+          <div className="entete">
+            <div className="enteterecettessucrees"></div>
+          </div>
+          <div className="RecetteCard">
+            <div className="r01cookies"></div>
+          </div>
+        </div>
+      )}
+      {type === "salees" && (
+        <div className="salees">
+          <div className="entete">
+            <div className="enteterecettessalees"></div>
+          </div>
+          <div className="RecetteCard">
+            <div className="p01rizcurcuma"></div>
+          </div>
+        </div>
+      )}
       {renderStars()}
     </div>
   );

@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import ListeRecettesCards from "../components/ListeRecettesCards";
 import Footer from "../components/Footer";
 
-const Recettes = () => {
+const RecettesSucrees = () => {
   useEffect(() => {
     // Défilement vers le haut de la page au chargement
     window.scrollTo(0, 0);
@@ -16,7 +16,7 @@ const Recettes = () => {
       </div>
       <div className="homeliste-content">
         <div className="recettes-container">
-          <ListeRecettesCards />
+          <ListeRecettesCards type={"sucrees"} />
         </div>
       </div>
       <div className="footer">
@@ -26,4 +26,4 @@ const Recettes = () => {
   );
 };
 
-export default Recettes;
+export default RecettesSucrees;

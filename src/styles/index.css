@@ -23,6 +23,9 @@ body {
   color: rgb(37, 21, 11);
   border: 10px rgba(187, 176, 159, 0.644);
 }
+body h3 {
+  margin-top: 5px;
+}
 
 .home .homeliste-content {
   display: grid;
@@ -452,7 +455,7 @@ nav .nav-container .logo .nav-buttons button i:visited,
 }
 
 .imgCoeurVeganA {
-  background: url(../../../assets/img/003ACoeurVegan.png) center/cover;
+  background: url(../../../assets/img/coeurvegan003/003ACoeurVegan.png) center/cover;
   padding: 3px;
   min-height: 100%;
   border-radius: 20px;
@@ -464,7 +467,7 @@ nav .nav-container .logo .nav-buttons button i:visited,
 }
 
 .imgCoeurVeganB {
-  background: url(../../../assets/img/003BCoeurVegan.png) center/cover;
+  background: url(../../../assets/img/coeurvegan003/003BCoeurVegan.png) center/cover;
   padding: 3px;
   min-height: 100%;
   border-radius: 20px;
@@ -476,7 +479,7 @@ nav .nav-container .logo .nav-buttons button i:visited,
 }
 
 .imgCoeurVeganC {
-  background: url(../../../assets/img/003CCoeurVegan.png) center/cover;
+  background: url(../../../assets/img/coeurvegan003/003CCoeurVegan.png) center/cover;
   padding: 3px;
   min-height: 100%;
   border-radius: 20px;
@@ -488,13 +491,37 @@ nav .nav-container .logo .nav-buttons button i:visited,
 }
 
 .imgCoeurVeganD {
-  background: url(../../../assets/img/003DCoeurVegan.png) center/cover;
+  background: url(../../../assets/img/coeurvegan003/003DCoeurVegan.png) center/cover;
   padding: 3px;
   min-height: 100%;
   border-radius: 20px;
 }
 @media (max-width: 650px) {
   .imgCoeurVeganD {
+    background-size: contain; /* Redimensionner l'image pour s'ajuster */
+  }
+}
+
+.imgHomoCretinusA {
+  background: url(../../../assets/img/homocretinus005/005Ahomocretinus.png) center/cover;
+  padding: 3px;
+  min-height: 100%;
+  border-radius: 20px;
+}
+@media (max-width: 650px) {
+  .imgHomoCretinusA {
+    background-size: contain; /* Redimensionner l'image pour s'ajuster */
+  }
+}
+
+.imgHomoCretinusB {
+  background: url(../../../assets/img/homocretinus005/005Bhomocretinus.png) center/cover;
+  padding: 3px;
+  min-height: 100%;
+  border-radius: 20px;
+}
+@media (max-width: 650px) {
+  .imgHomoCretinusB {
     background-size: contain; /* Redimensionner l'image pour s'ajuster */
   }
 }
@@ -634,6 +661,309 @@ nav .nav-container .logo .nav-buttons button i:visited,
     background-size: contain; /* Redimensionner l'image pour s'ajuster */
   }
 }
+.listeBDCards .entete {
+  width: 600px;
+  height: 120px;
+  margin: 10px auto;
+}
+@media (max-width: 650px) {
+  .listeBDCards .entete {
+    width: 570px;
+    height: 114px;
+  }
+}
+@media (max-width: 630px) {
+  .listeBDCards .entete {
+    width: 540px;
+    height: 108px;
+  }
+}
+@media (max-width: 600px) {
+  .listeBDCards .entete {
+    width: 510px;
+    height: 102px;
+  }
+}
+@media (max-width: 600px) {
+  .listeBDCards .entete {
+    width: 450px;
+    height: 90px;
+  }
+}
+@media (max-width: 460px) {
+  .listeBDCards .entete {
+    width: 430px;
+    height: 86px;
+  }
+}
+@media (max-width: 430px) {
+  .listeBDCards .entete {
+    width: 410px;
+    height: 82px;
+  }
+}
+@media (max-width: 420px) {
+  .listeBDCards .entete {
+    width: 390px;
+    height: 78px;
+  }
+}
+@media (max-width: 400px) {
+  .listeBDCards .entete {
+    width: 370px;
+    height: 74px;
+    padding: 3px;
+  }
+}
+@media (max-width: 385px) {
+  .listeBDCards .entete {
+    width: 330px;
+    height: 66px;
+    padding: 1px;
+  }
+}
+@media (max-width: 355px) {
+  .listeBDCards .entete {
+    width: 320px;
+    height: 64px;
+  }
+}
+@media (max-width: 340px) {
+  .listeBDCards .entete {
+    width: 310px;
+    height: 62px;
+  }
+}
+.listeBDCards .entete .entetetextes {
+  background: url(../../assets/img/entetes/entetetextes.png) center/cover;
+  padding: 3px;
+  min-height: 100%;
+  border-radius: 20px;
+  background-size: contain; /* Redimensionner l'image pour s'ajuster */
+}
+
+.listeRecettesCards .RecettesCardMultiple {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px 20px 5px 20px;
+}
+.listeRecettesCards .RecettesCardMultiple button {
+  font-weight: 700;
+  margin: 2px 0 20px 0;
+  padding: 6px 6px;
+  font-size: 1.4rem;
+  border-radius: 5px;
+  background-color: rgb(206, 228, 187);
+}
+.listeRecettesCards .RecettesCardMultiple button:hover {
+  background: rgb(37, 21, 11);
+  color: wheat;
+}
+.listeRecettesCards .RecettesCardMultiple button a,
+.listeRecettesCards .RecettesCardMultiple button i {
+  text-decoration: none;
+  transition: all 0.2s linear;
+  font-weight: 700;
+  align-items: center;
+  color: rgb(40, 75, 35);
+  text-decoration: none;
+}
+.listeRecettesCards .RecettesCardMultiple button a:hover,
+.listeRecettesCards .RecettesCardMultiple button i:hover {
+  color: wheat;
+  background: rgb(37, 21, 11);
+}
+.listeRecettesCards .RecettesCardMultiple button a:visited,
+.listeRecettesCards .RecettesCardMultiple button i:visited {
+  color: rgb(40, 75, 35);
+}
+.listeRecettesCards .RecetteCard {
+  width: 600px;
+  height: 600px;
+  margin: 0 auto;
+  padding: 20px 20px 5px 20px;
+}
+@media (max-width: 650px) {
+  .listeRecettesCards .RecetteCard {
+    width: 570px;
+    height: 570px;
+  }
+}
+@media (max-width: 630px) {
+  .listeRecettesCards .RecetteCard {
+    width: 540px;
+    height: 540px;
+  }
+}
+@media (max-width: 600px) {
+  .listeRecettesCards .RecetteCard {
+    width: 510px;
+    height: 510px;
+  }
+}
+@media (max-width: 600px) {
+  .listeRecettesCards .RecetteCard {
+    width: 450px;
+    height: 450px;
+  }
+}
+@media (max-width: 460px) {
+  .listeRecettesCards .RecetteCard {
+    width: 430px;
+    height: 430px;
+    padding: 10px;
+  }
+}
+@media (max-width: 430px) {
+  .listeRecettesCards .RecetteCard {
+    width: 410px;
+    height: 410px;
+  }
+}
+@media (max-width: 420px) {
+  .listeRecettesCards .RecetteCard {
+    width: 390px;
+    height: 390px;
+  }
+}
+@media (max-width: 400px) {
+  .listeRecettesCards .RecetteCard {
+    width: 370px;
+    height: 370px;
+    padding: 3px;
+  }
+}
+@media (max-width: 385px) {
+  .listeRecettesCards .RecetteCard {
+    width: 330px;
+    height: 330px;
+    padding: 1px;
+  }
+}
+@media (max-width: 355px) {
+  .listeRecettesCards .RecetteCard {
+    width: 320px;
+    height: 320px;
+  }
+}
+@media (max-width: 340px) {
+  .listeRecettesCards .RecetteCard {
+    width: 310px;
+    height: 310px;
+  }
+}
+.listeRecettesCards .RecetteCard .r01cookies {
+  background: url(../../assets/recettes/r01cookies.png) center/cover;
+  padding: 3px;
+  min-height: 100%;
+  border-radius: 20px;
+}
+@media (max-width: 650px) {
+  .listeRecettesCards .RecetteCard .r01cookies {
+    background-size: contain; /* Redimensionner l'image pour s'ajuster */
+  }
+}
+.listeRecettesCards .RecetteCard .p01rizcurcuma {
+  background: url(../../assets/recettes/p01rizcurcuma.png) center/cover;
+  padding: 3px;
+  min-height: 100%;
+  border-radius: 20px;
+}
+@media (max-width: 650px) {
+  .listeRecettesCards .RecetteCard .p01rizcurcuma {
+    background-size: contain; /* Redimensionner l'image pour s'ajuster */
+  }
+}
+.listeRecettesCards .entete {
+  width: 600px;
+  height: 120px;
+  margin: 10px auto;
+}
+@media (max-width: 650px) {
+  .listeRecettesCards .entete {
+    width: 570px;
+    height: 114px;
+  }
+}
+@media (max-width: 630px) {
+  .listeRecettesCards .entete {
+    width: 540px;
+    height: 108px;
+  }
+}
+@media (max-width: 600px) {
+  .listeRecettesCards .entete {
+    width: 510px;
+    height: 102px;
+  }
+}
+@media (max-width: 600px) {
+  .listeRecettesCards .entete {
+    width: 450px;
+    height: 90px;
+  }
+}
+@media (max-width: 460px) {
+  .listeRecettesCards .entete {
+    width: 430px;
+    height: 86px;
+  }
+}
+@media (max-width: 430px) {
+  .listeRecettesCards .entete {
+    width: 410px;
+    height: 82px;
+  }
+}
+@media (max-width: 420px) {
+  .listeRecettesCards .entete {
+    width: 390px;
+    height: 78px;
+  }
+}
+@media (max-width: 400px) {
+  .listeRecettesCards .entete {
+    width: 370px;
+    height: 74px;
+    padding: 3px;
+  }
+}
+@media (max-width: 385px) {
+  .listeRecettesCards .entete {
+    width: 330px;
+    height: 66px;
+    padding: 1px;
+  }
+}
+@media (max-width: 355px) {
+  .listeRecettesCards .entete {
+    width: 320px;
+    height: 64px;
+  }
+}
+@media (max-width: 340px) {
+  .listeRecettesCards .entete {
+    width: 310px;
+    height: 62px;
+  }
+}
+.listeRecettesCards .entete .enteterecettessucrees {
+  background: url(../../assets/img/entetes/enteterecettessucrees.png) center/cover;
+  padding: 3px;
+  min-height: 100%;
+  border-radius: 20px;
+  background-size: contain; /* Redimensionner l'image pour s'ajuster */
+}
+.listeRecettesCards .entete .enteterecettessalees {
+  background: url(../../assets/img/entetes/enteterecettessalees.png);
+  padding: 3px;
+  min-height: 100%;
+  border-radius: 20px;
+  background-size: contain; /* Redimensionner l'image pour s'ajuster */
+}
 
 .petitscochonspage1 {
   background: url(../../../assets/img/cochons004/petitscochonspage1.png) center/cover;
@@ -744,7 +1074,7 @@ nav .nav-container .logo .nav-buttons button i:visited,
 }
 
 .imgCoeurVeganA {
-  background: url(../../../assets/img/003ACoeurVegan.png) center/cover;
+  background: url(../../../assets/img/coeurvegan003/003ACoeurVegan.png) center/cover;
   padding: 3px;
   min-height: 100%;
   border-radius: 20px;
@@ -756,7 +1086,7 @@ nav .nav-container .logo .nav-buttons button i:visited,
 }
 
 .imgCoeurVeganB {
-  background: url(../../../assets/img/003BCoeurVegan.png) center/cover;
+  background: url(../../../assets/img/coeurvegan003/003BCoeurVegan.png) center/cover;
   padding: 3px;
   min-height: 100%;
   border-radius: 20px;
@@ -768,7 +1098,7 @@ nav .nav-container .logo .nav-buttons button i:visited,
 }
 
 .imgCoeurVeganC {
-  background: url(../../../assets/img/003CCoeurVegan.png) center/cover;
+  background: url(../../../assets/img/coeurvegan003/003CCoeurVegan.png) center/cover;
   padding: 3px;
   min-height: 100%;
   border-radius: 20px;
@@ -780,13 +1110,37 @@ nav .nav-container .logo .nav-buttons button i:visited,
 }
 
 .imgCoeurVeganD {
-  background: url(../../../assets/img/003DCoeurVegan.png) center/cover;
+  background: url(../../../assets/img/coeurvegan003/003DCoeurVegan.png) center/cover;
   padding: 3px;
   min-height: 100%;
   border-radius: 20px;
 }
 @media (max-width: 650px) {
   .imgCoeurVeganD {
+    background-size: contain; /* Redimensionner l'image pour s'ajuster */
+  }
+}
+
+.imgHomoCretinusA {
+  background: url(../../../assets/img/homocretinus005/005Ahomocretinus.png) center/cover;
+  padding: 3px;
+  min-height: 100%;
+  border-radius: 20px;
+}
+@media (max-width: 650px) {
+  .imgHomoCretinusA {
+    background-size: contain; /* Redimensionner l'image pour s'ajuster */
+  }
+}
+
+.imgHomoCretinusB {
+  background: url(../../../assets/img/homocretinus005/005Bhomocretinus.png) center/cover;
+  padding: 3px;
+  min-height: 100%;
+  border-radius: 20px;
+}
+@media (max-width: 650px) {
+  .imgHomoCretinusB {
     background-size: contain; /* Redimensionner l'image pour s'ajuster */
   }
 }

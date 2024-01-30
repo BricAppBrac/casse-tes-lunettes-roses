@@ -4,6 +4,7 @@ const ListeBDCards = () => {
   const [imgIndices, setImgIndices] = useState({
     coeurVegan: 0,
     cochons: 0,
+    cretinus: 0,
   });
 
   const renderStars = () => (
@@ -14,6 +15,7 @@ const ListeBDCards = () => {
     </h3>
   );
 
+  // ATTENTION : CLASSES CSS
   const imgCoeurVeganList = [
     "imgCoeurVeganA",
     "imgCoeurVeganB",
@@ -32,6 +34,8 @@ const ListeBDCards = () => {
     "petitscochonspage8",
     "petitscochonspage9",
   ];
+
+  const imgCretinusList = ["imgHomoCretinusA", "imgHomoCretinusB"];
 
   const handlePrevClick = (category, listLength) => {
     setImgIndices({
@@ -62,6 +66,29 @@ const ListeBDCards = () => {
 
   return (
     <div className="listeBDCards">
+      <div className="entete">
+        <div className="entetetextes"></div>
+      </div>
+      <div className="BDCard">{renderImage(imgCretinusList, "cretinus")}</div>
+      <div className="BDCardMultiple">
+        <div className="buttonprev">
+          {renderButton(
+            imgIndices["cretinus"] > 0,
+            () => handlePrevClick("cretinus", imgCretinusList.length),
+            "fa-solid fa-square-caret-left"
+          )}
+        </div>
+        <div className="buttonnext">
+          {renderButton(
+            imgIndices["cretinus"] < imgCretinusList.length - 1,
+            () => handleNextClick("cretinus", imgCretinusList.length),
+            "fa-solid fa-square-caret-right"
+          )}
+        </div>
+      </div>
+
+      {renderStars()}
+
       <div className="BDCard">{renderImage(imgCochonsList, "cochons")}</div>
       <div className="BDCardMultiple">
         <div className="buttonprev">
@@ -79,6 +106,7 @@ const ListeBDCards = () => {
           )}
         </div>
       </div>
+
       {renderStars()}
 
       <div className="BDCard">
@@ -100,11 +128,13 @@ const ListeBDCards = () => {
           )}
         </div>
       </div>
+
       {renderStars()}
 
       <div className="BDCard">
         <div className="imgOmnivoreChoix"></div>
       </div>
+
       {renderStars()}
 
       <div className="BDCard">
