@@ -105,7 +105,15 @@
       width: 310px;
       height: 310px;
     }
-
+    .r02crepes {
+      background: url(../../assets/recettes/r02crepes.png) center/cover;
+      padding: 3px;
+      min-height: 100%;
+      border-radius: 20px;
+      @media (max-width: 650px) {
+        background-size: contain; /* Redimensionner l'image pour s'ajuster */
+      }
+    }
     .r01cookies {
       background: url(../../assets/recettes/r01cookies.png) center/cover;
       padding: 3px;
@@ -117,6 +125,15 @@
     }
     .p01rizcurcuma {
       background: url(../../assets/recettes/p01rizcurcuma.png) center/cover;
+      padding: 3px;
+      min-height: 100%;
+      border-radius: 20px;
+      @media (max-width: 650px) {
+        background-size: contain; /* Redimensionner l'image pour s'ajuster */
+      }
+    }
+    .p02ramenslegumes {
+      background: url(../../assets/recettes/p02ramenslegumes.png) center/cover;
       padding: 3px;
       min-height: 100%;
       border-radius: 20px;

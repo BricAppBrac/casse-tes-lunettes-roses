@@ -67,6 +67,11 @@ const ListeRecettesCards = ({ type }) => {
           <div className="entete">
             <div className="enteterecettessucrees"></div>
           </div>
+          {renderStars()}
+          <div className="RecetteCard">
+            <div className="r02crepes"></div>
+          </div>
+          {renderStars()}
           <div className="RecetteCard">
             <div className="r01cookies"></div>
           </div>
@@ -77,6 +82,11 @@ const ListeRecettesCards = ({ type }) => {
           <div className="entete">
             <div className="enteterecettessalees"></div>
           </div>
+          {renderStars()}
+          <div className="RecetteCard">
+            <div className="p02ramenslegumes"></div>
+          </div>
+          {renderStars()}
           <div className="RecetteCard">
             <div className="p01rizcurcuma"></div>
           </div>

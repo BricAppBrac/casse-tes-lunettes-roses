@@ -69,6 +69,7 @@ const ListeBDCards = () => {
       <div className="entete">
         <div className="entetetextes"></div>
       </div>
+      {renderStars()}
       <div className="BDCard">{renderImage(imgCretinusList, "cretinus")}</div>
       <div className="BDCardMultiple">
         <div className="buttonprev">
