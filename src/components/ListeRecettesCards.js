@@ -84,6 +84,10 @@ const ListeRecettesCards = ({ type }) => {
           </div>
           {renderStars()}
           <div className="RecetteCard">
+            <div className="p03veloutepotimarron"></div>
+          </div>
+          {renderStars()}
+          <div className="RecetteCard">
             <div className="p02ramenslegumes"></div>
           </div>
           {renderStars()}
