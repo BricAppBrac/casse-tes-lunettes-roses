@@ -38,9 +38,9 @@ const ListeRecettesCards = ({ type }) => {
   //   );
 
   // const renderImage = (imgList, category) => (
-  //   <div className="BDCard">
+
   //     <div className={imgList[imgIndices[category]]}></div>
-  //   </div>
+
   // );
 
   return (
@@ -81,6 +81,10 @@ const ListeRecettesCards = ({ type }) => {
         <div className="salees">
           <div className="entete">
             <div className="enteterecettessalees"></div>
+          </div>
+          {renderStars()}
+          <div className="RecetteCard">
+            <div className="p04tartemoutarde"></div>
           </div>
           {renderStars()}
           <div className="RecetteCard">

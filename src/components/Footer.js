@@ -37,7 +37,7 @@ const Footer = () => {
       </div>
       <div className="footer-container2">
         <div className="footertext">
-          <h3>CasseTesLunettesRoses.fr </h3>
+          <h3>casse-tes-lunettes-roses.fr </h3>
         </div>
         <div className="footertext">
           <h3>2024 © Copyright - Tous droits réservés</h3>

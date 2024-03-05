@@ -1,6 +1,7 @@
 @import "./images/cochons";
 @import "./images/coeurvegan";
-@import "./images/homocretinus";
+@import "./images/findevie";
+@import "./images/animauxlovers";
 
 .listeBDCards {
   .BDCardMultiple {
@@ -132,6 +133,16 @@
 
     .imgReincarnation {
       background: url(../../assets/img/006reincarnation.png) center/cover;
+      padding: 3px;
+      min-height: 100%;
+      border-radius: 20px;
+      @media (max-width: 650px) {
+        background-size: contain; /* Redimensionner l'image pour s'ajuster */
+      }
+    }
+
+    .imgReduirePoa {
+      background: url(../../assets/img/009reduirepoa.png) center/cover;
       padding: 3px;
       min-height: 100%;
       border-radius: 20px;

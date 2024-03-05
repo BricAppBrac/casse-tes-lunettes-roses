@@ -17,6 +17,10 @@ const Navbar = () => {
     console.log("handlePageRecettesSalees");
     navigate("/recettes-veganes-salees");
   };
+  const handlePageApplications = () => {
+    console.log("handlePageApplications");
+    navigate("/applications");
+  };
 
   const handleInstagram = () => {
     console.log("handleInstagram");
@@ -56,6 +60,12 @@ const Navbar = () => {
                 <button onClick={() => handleHome()}>
                   {" "}
                   <i className="fa-solid fa-house"></i>
+                </button>
+              </li>
+              <li>
+                <button onClick={() => handlePageApplications()}>
+                  {" "}
+                  <i className="fa-solid fa-mobile"></i>
                 </button>
               </li>
               <li>
