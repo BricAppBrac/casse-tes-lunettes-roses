@@ -74,6 +74,16 @@ const ListeBDCards = () => {
         <div className="entetetextes"></div>
       </div>
       {renderStars()}
+      {/* BD Reduire POA 011 */}
+      <div className="BDCard">
+        <div className="imgFoiHumanite"></div>
+      </div>
+      {renderStars()}
+      {/* BD Reduire POA 010 */}
+      <div className="BDCard">
+        <div className="imgCasertarien"></div>
+      </div>
+      {renderStars()}
       {/* BD Reduire POA 009 */}
       <div className="BDCard">
         <div className="imgReduirePoa"></div>

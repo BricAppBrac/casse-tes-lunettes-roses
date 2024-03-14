@@ -150,6 +150,26 @@
         background-size: contain; /* Redimensionner l'image pour s'ajuster */
       }
     }
+
+    .imgCasertarien {
+      background: url(../../assets/img/010casertarien.png) center/cover;
+      padding: 3px;
+      min-height: 100%;
+      border-radius: 20px;
+      @media (max-width: 650px) {
+        background-size: contain; /* Redimensionner l'image pour s'ajuster */
+      }
+    }
+
+    .imgFoiHumanite {
+      background: url(../../assets/img/011foihumanité.png) center/cover;
+      padding: 3px;
+      min-height: 100%;
+      border-radius: 20px;
+      @media (max-width: 650px) {
+        background-size: contain; /* Redimensionner l'image pour s'ajuster */
+      }
+    }
   }
 
   .entete {
